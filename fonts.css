@@ -1,0 +1,72 @@
+/* ===== Typography ======================================================== */
+@font-face{ 
+    font-family: 'KlavikaMedium-Italic';
+    src: url('../fonts/klavikamedium-italic-webfont.eot');
+    src: url('../fonts/klavikamedium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/klavikamedium-italic-webfont.woff') format('woff'),
+         url('../fonts/klavikamedium-italic-webfont.ttf') format('truetype'),
+         url('../fonts/klavikamedium-italic-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaLight-Plain'; 
+        src: url('../fonts/klavikalight-plain-webfont.eot'); 
+        src: url('../fonts/klavikalight-plain-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/klavikalight-plain-webfont.woff') format('woff'),
+             url('../fonts/klavikalight-plain-webfont.ttf') format('truetype'),
+             url('../fonts/klavikalight-plain-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaRegular-Italic';
+        src: url('../fonts/klavikaregular-italic-webfont.eot');                                        
+        src: url('../fonts/klavikaregular-italic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/klavikaregular-italic-webfont.woff') format('woff'),
+             url('../fonts/klavikaregular-italic-webfont.ttf') format('truetype'),
+             url('../fonts/klavikaregular-italic-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaBold-Bold';
+        src: url('fonts/klavikabold-bold-webfont.eot');                                        
+        src: url('fonts/klavikabold-bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/klavikabold-bold-webfont.woff') format('woff'),
+             url('fonts/klavikabold-bold-webfont.ttf') format('truetype'),
+             url('fonts/klavikabold-bold-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaRegular';
+        src: url('fonts/klavikaregular-tf-webfont.eot');                                        
+        src: url('fonts/klavikaregular-tf-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/klavikaregular-tf-webfont.woff') format('woff'),
+             url('fonts/klavikaregular-tf-webfont.ttf') format('truetype'),
+             url('fonts/klavikaregular-tf-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaLight-Italic';
+        src: url('../fonts/klavikalight-italic-webfont.eot');                                        
+        src: url('../fonts/klavikalight-italic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/klavikalight-italic-webfont.woff') format('woff'),
+             url('../fonts/klavikalight-italic-webfont.ttf') format('truetype'),
+             url('../fonts/klavikalight-italic-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaMedium';
+        src: url('../fonts/klavikamedium-tf-webfont.eot');                                        
+        src: url('../fonts/klavikamedium-tf-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/klavikamedium-tf-webfont.woff') format('woff'),
+             url('../fonts/klavikamedium-tf-webfont.ttf') format('truetype'),
+             url('../fonts/klavikamedium-tf-webfont.svg#webfont') format('svg');
+}
+
+@font-face { 
+        font-family: 'KlavikaBold-Italic';
+        src: url('../fonts/klavikabold-bolditalic-webfont.eot');                                        
+        src: url('../fonts/klavikabold-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/klavikabold-bolditalic-webfont.woff') format('woff'),
+             url('../fonts/klavikabold-bolditalic-webfont.ttf') format('truetype'),
+             url('../fonts/klavikabold-bolditalic-webfont.svg#webfont') format('svg');
+}

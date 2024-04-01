@@ -1,0 +1,208 @@
+  #pad {
+            width: 320px;
+            height: 414px;
+            margin: auto;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            margin: 0px;
+            font-family: 'KlavikaRegular' ;
+        }
+
+        #titol {
+            float: left;
+            width: 140px;
+            margin: 5px;
+            margin-top: 10px;
+            font-family: 'KlavikaRegular';
+        }
+        #caixa_dreta {
+            float: left;
+            background: url('fons_fusta.png');
+            width: 110px;
+            height: 385px;
+            border-radius: 2em;
+            padding: 10px;
+            margin-top: 0px;
+            border: 2px solid #000;
+        }
+
+        .boto {
+            background: url('boto_petit.png');
+            width: 16px;
+            height: 16px;
+            border: 0px;
+            margin: 2px;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .kind_chord {
+            margin: 0.2em 2px;
+        }
+
+        #primera_fila_marimon {
+            width: 35px;
+            float: left;
+            margin-top: 40px;
+            margin-left: 15px;
+            margin-right: 5px;
+        }
+
+        #primera_fila {
+            width: 35px;
+            float: left;
+            margin-top: 40px;
+        }
+
+        #segona_fila_marimon {
+            width: 35px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        #segona_fila {
+            width: 35px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        #tercera_fila {
+            width: 35px;
+            float: left;
+        }
+
+        #primera_esquerra {
+            width: 35px;
+            float: left;
+        }
+
+        #segona_esquerra {
+            width: 35px;
+            float: left;
+        }
+
+        #tercera_esquerra {
+            width: 35px;
+            float: left;
+        }
+
+        #primera_marc {
+            width: 35px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        #segona_marc {
+            width: 35px;
+            float: left;
+        }
+
+        #tercera_marc {
+            width: 35px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        #primera_esquerra_marimon {
+            float: left;
+            width: 35px;
+            margin-left: 15px;
+            margin-top: 25px;
+        }
+
+        #segona_esquerra_marimon {
+            float: left;
+            width: 35px;
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+
+
+        #caixa_esquerra {
+            background: url('fons_fusta.png');
+            width: 110px;
+            height: 190px;
+            border-radius: 2em;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+            border: 2px solid #000;
+            margin-right: 30px;
+        }
+
+        #canvi {
+            width: 165px;
+            margin-bottom: 5px;
+        }
+
+        #canvi button {
+            width: 44px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        #canvi a {
+            height: 30px;
+            width: 39px;
+        }
+
+        #canvi .kind_chord {
+            height: 30px;
+            width: 38px;
+        }
+
+        #slot_esquerra {
+            float: left;
+        }
+
+        #canvi_estat {
+            float: left;
+            width: 100px;
+        }
+        #header {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        #tornar {
+            float: left;
+            width: 50px;
+            height: 30px;
+        }
+
+        .active {
+            opacity: 0.5;
+        }
+
+        #tancar {
+            font-family: 'KlavikaRegular';
+        }
+
+        .botoactiu {
+            opacity: 0.5;
+        }
+
+        .botoseptima {
+            background: url('boto_septima.png') !important;
+        }
+        .botosisena {
+            background: url('boto_sisena.png') !important;
+        }
+        .botonovena {
+            background: url('boto_novena.png') !important;
+        }
+        .active span{
+            color: brown;
+        }
+
+        #tipus_acords  {
+            border: 1px solid #000;
+            padding: 1px;
+        }

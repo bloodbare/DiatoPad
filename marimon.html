@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=9" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+  <meta charset="utf-8">
+    <title>Marimon</title>
+    <script src="phonegap.js"></script>
+<!--    <script src="cordova-ios.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="jquery/jquery-1.7.2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="ga.js"></script>
+      <script type="text/javascript" charset="utf-8">
+       var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32656109-1']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_trackPageview', 'marimon.html']);
+    </script>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.1.0.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="diato.css">
+
+    <script>
+
+
+
+        var botons_dreta = { 
+            'A': [3,7,11,16,20],
+            'Bb': [13],
+            'B': [17,21],
+            'C': [4,8],
+            'C#': [1,2],
+            'D': [14,18],
+            'Eb': [2],
+            'E': [5,9],
+            'F': [15,19],
+            'F#': [6,10],
+            'G': [],
+            'G#': [12]
+        }
+
+        var botons_dreta_tancant = { 
+            'A': [],
+            'Bb': [13],
+            'B': [4,7,10],
+            'C': [14,17,20],
+            'C#': [],
+            'D': [5,8,11],
+            'Eb': [1,2],
+            'E': [15,18,21],
+            'F': [],
+            'F#': [],
+            'G': [3,6,9,16,19],
+            'G#': [12]
+        }
+
+        var acords_obrint = ['d','D','g','G','a','A','f','F']
+        var acords_tancant = ['g','G','c','C','e','E','f','F']
+
+        var botons_esquerra = {
+          'A-': [6,5],
+          'GM': [4,3],
+          'DM': [2,1],
+          'D-': [2,7],
+          'FM': [8,7]
+        }
+
+
+        var botons_esquerra_tancant = {
+          'CM': [4,3],
+          'EM': [6,5],
+          'E-': [6,1],
+          'FM': [8,7],
+          'GM': [2,1],
+        }
+    </script>
+    <script src="diato.js"></script>
+
+  </head>
+  <body class="ui-mobile-viewport ui-overlay-c">
+    <div id="pad" data-role="page">
+        <div id="header">
+        <div id="tornar"><a href="index.html" data-role="button" data-icon="arrow-l"></a></div>
+        <div id="titol"> Marimon </div>
+        <div id="canvi_estat"> <a href="#" id="tancar" data-role="button" data-mini="true">Tancar</a></div>
+        </div>
+
+        <div id="slot_esquerra">
+        <div id="canvi">
+            <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" class="chord" target-chord="A" data-role="button">A</a>
+                <a href="#" class="chord" target-chord="Bb" data-role="button">Bb</a>
+                <a href="#" class="chord" target-chord="B" data-role="button">B</a>
+                <a href="#" class="chord" target-chord="C" data-role="button">C</a>
+
+            </div>
+            <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" class="chord" target-chord="C#" data-role="button">C#</a>
+                <a href="#" class="chord" target-chord="D" data-role="button">D</a>
+                <a href="#" class="chord" target-chord="Eb" data-role="button">Eb</a>
+                <a href="#" class="chord" target-chord="E" data-role="button">E</a>
+            </div>
+
+            <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" class="chord" target-chord="F" data-role="button">F</a>
+                <a href="#" class="chord" target-chord="F#" data-role="button">F#</a>
+                <a href="#" class="chord" target-chord="G" data-role="button">G</a>
+                <a href="#" class="chord" target-chord="G#" data-role="button">G#</a>
+            </div>
+
+        </div>
+
+        <div id="canvi">
+
+              <div id="tipus_acords" data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" class="kind_chord"  target-kind="M" data-role="button">M</a>
+                <a href="#" class="kind_chord"  target-kind="-" data-role="button">m</a>
+                <a href="#" class="kind_chord"  target-kind="dim" data-role="button">o</a>
+                <a href="#" class="kind_chord"  target-kind="aug" data-role="button">+</a>
+            </div>
+
+              <div id="tipus_acords" data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" id="primer_subtipus" class="sub_kind_chord"  target-kind="M" data-role="button">&Delta;</a>
+                <a href="#" id="segon_subtipus" class="sub_kind_chord"  target-kind="-" data-role="button">7</a>
+                <a href="#" id="tercer_subtipus" class="sub_kind_chord"  target-kind="dim" data-role="button">69</a>
+                <a href="#" id="quart_subtipus" class="sub_kind_chord"  target-kind="sus4" data-role="button">s4</a>
+            </div>
+
+        </div>
+        
+
+        <div id="caixa_esquerra">
+            <div id="primera_esquerra_marimon">
+                <div class="boto" id="botoe4">G</div>
+                <div class="boto" id="botoe3">g</div>
+                <div class="boto" id="botoe2">D</div>
+                <div class="boto" id="botoe1">d</div>
+            </div>
+
+            <div id="segona_esquerra_marimon">
+                <div class="boto" id="botoe8">F</div>
+                <div class="boto" id="botoe7">f</div>
+                <div class="boto" id="botoe6">A</div>
+                <div class="boto" id="botoe5">a</div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+        <div id="caixa_dreta">
+
+            <div id="primera_fila_marimon">
+                <div class="boto basic" id="boto21">B</div>
+                <div class="boto basic" id="boto20">A</div>
+                <div class="boto basic" id="boto19">F</div>
+                <div class="boto basic" id="boto18">D</div>
+                <div class="boto basic" id="boto17">B</div>
+                <div class="boto basic" id="boto16">A</div>
+                <div class="boto basic" id="boto15">F</div>
+                <div class="boto basic" id="boto14">D</div>
+                <div class="boto basic" id="boto13">Bb</div>
+                <div class="boto basic" id="boto12">G#</div>
+            </div>
+            <div id="segona_fila_marimon">
+                <div class="boto basic" id="boto11">A</div>
+                <div class="boto basic" id="boto10">F#</div>
+                <div class="boto basic" id="boto9">E</div>
+                <div class="boto basic" id="boto8">C</div>
+                <div class="boto basic" id="boto7">A</div>
+                <div class="boto basic" id="boto6">F#</div>
+                <div class="boto basic" id="boto5">E</div>
+                <div class="boto basic" id="boto4">C</div>
+                <div class="boto basic" id="boto3">A</div>
+                <div class="boto basic" id="boto2">D#</div>
+                <div class="boto basic" id="boto1">C#</div>
+            </div>
+    </div>
+
+    </div>
+  </body>
+</html>
